@@ -56,6 +56,80 @@
             </li>
           </ul>
         </address>
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <!-- mobile-menu -->
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-cont">
+          <button class="mobile-close-btn" type="button" data-menu-close>
+            <svg class="icom-mob-close" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="mob-nav">
+            <ul class="mob-list">
+              <li class="mob-item">
+                <a class="mob-link blue" href="./index.html">Studio</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-link" href="">Portfolio</a>
+              </li>
+              <li class="mob-item">
+                <a class="mob-link" href="">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="contacts-mob">
+            <ul class="contacts-list-mob">
+              <li class="contacts-item-mob">
+                <a class="contacts-link-mob blue-add" href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li class="contacts-item-mob">
+                <a class="contacts-link-mob" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <div class="mob-link">
+            <ul class="icon-list">
+              <li class="item-icon">
+                <a href="" class="icon-link">
+                  <svg width="24" height="24" class="team-icon">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icon">
+                <a href="" class="icon-link">
+                  <svg width="24" height="24" class="team-icon">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icon">
+                <a href="" class="icon-link">
+                  <svg width="24" height="24" class="team-icon">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="item-icon">
+                <a href="" class="icon-link">
+                  <svg width="24" height="24" class="team-icon">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <!-- #endregion header -->
@@ -64,7 +138,9 @@
       <section class="hero">
         <div class="container hero-container">
           <h1 class="hero-title">Effective Solutions for Your Business</h1>
-          <button class="hero-bth" type="button">Order Service</button>
+          <button class="hero-bth" type="button" data-modal-open>
+            Order Service
+          </button>
         </div>
       </section>
       <!-- #endregion hero -->
@@ -126,7 +202,7 @@
       </section>
       <!-- #endregion Our Benefits -->
       <!-- #region team -->
-      <section class="team">
+      <section class="team hidden">
         <div class="container team-cont">
           <h2 class="title-team">Our Team</h2>
           <ul class="item-team">
@@ -141,14 +217,7 @@
               <div class="cont-team-title">
                 <h3 class="title-team-list">Mark Guerrero</h3>
                 <p class="text-team">Product Designer</p>
-                <ul class="icon-list">
-                  <li class="item-icon">
-                    <a href="" class="icon-link">
-                      <svg width="16" height="16" class="team-icon">
-                        <use href="./images/icons.svg#icon-instagram"></use>
-                      </svg>
-                    </a>
-                  </li>
+              24
                   <li class="item-icon">
                     <a href="" class="icon-link">
                       <svg width="16" height="16" class="team-icon">
@@ -307,7 +376,7 @@
       </section>
       <!-- #endregion team -->
       <!-- #region  Our Portfolio  -->
-      <section class="portfolio">
+      <section class="portfolio hidden">
         <div class="container">
           <h2 class="title-portf">Our Portfolio</h2>
           <ul class="item-portf">
@@ -436,7 +505,7 @@
       </section>
       <!-- #endregion Our Portfolio  -->
     </main>
-    <footer class="footer">
+    <footer class="footer hidden">
       <!-- #region footer -->
       <div class="container footer-full">
         <div class="container footer-cont">
@@ -505,9 +574,9 @@
       <!-- #endregion footer -->
     </footer>
     <!--#region form-->
-    <div class="backdrop is-open">
+    <div class="backdrop hidden" data-modal>
       <div class="modal">
-        <button class="modal-close" type="button">
+        <button class="modal-close" type="button" data-modal-close>
           <svg class="icon-close" width="8" height="8">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
@@ -594,4 +663,6 @@
     </div>
     <!--#endregion form-->
   </body>
+  <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </html>
