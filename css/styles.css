@@ -342,7 +342,7 @@ button {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(/images/hero/people-office-mobil@1x.jpg);
+    url(./images/hero/people-office-mobil@1x.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -418,7 +418,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-mobil@2x.jpg);
+      url(./images/hero/people-office-mobil@2x.jpg);
   }
 }
 
@@ -431,7 +431,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-tablet@1x.jpg);
+      url(./images/hero/people-office-tablet@1x.jpg);
   }
 }
 
@@ -441,7 +441,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-tablet@2x.jpg);
+      url(./images/hero/people-office-tablet@2x.jpg);
   }
 }
 
@@ -454,7 +454,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-deskl@1x.jpg);
+      url(./images/hero/people-office-deskl@1x.jpg);
   }
 }
 
@@ -464,7 +464,7 @@ button {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(/images/hero/people-office-desk@2x.jpg);
+      url(./images/hero/people-office-desk@2x.jpg);
   }
 }
 /* #endregion hero */
